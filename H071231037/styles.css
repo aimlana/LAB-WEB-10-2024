@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: rgb(125, 180, 199);
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: 53.5px;
+    flex-wrap: wrap;
+
+}
+
+.navbar a {
+    font-size: 20px;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #f2f2f2;
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a:hover {
+    background-color: rgb(123, 108, 108);
+}
+
+.box {
+    background-color: rgb(247, 243, 243);
+    display: flex;
+    justify-content: space-around;    
+    align-items: center;
+    padding: 80px;
+}
+
+.box img {
+    width: 30%;
+}
+
+.box h1 {
+    font-size: 4rem;
+}
+
+.text-content {
+    max-width: 50%;
+}
+
+.box2 h1 {
+    font-size: 2rem;
+ 
+}
+
+h4 {
+    font-size: 2vw;
+    color: rgb(125, 180, 199);
+}
+
+.box2 {
+    margin: 80px;
+}
+
+.box3 {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    gap: 16px;
+
+}
+
+.box-gallery {
+    background-color: rgb(247, 243, 243);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    justify-items: center;
+    column-gap: 20px;
+    row-gap: 20px;
+
+}
+
+.box-gallery img {
+    width: 100%;
+
+}
+
+.box-gallery img:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+footer {
+    background-color: rgb(125, 180, 199);
+    padding: auto;
+}
+
+footer img {
+    width: 5%;
+    height: auto;
+    margin-top: 40px;
+}
+
+.kontakku {
+    display: flex;
+    justify-content: flex-end;
+
+    color: #f2f2f2;
+    gap: 10px;
+
+}
+
+@media only screen and (max-width: 480px) {
+    .box-gallery {
+        grid-template-columns: 1fr;
+    }
+    .box3 {
+        padding: 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .box2 h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+    .box {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    .box h1 {
+        font-size: 3rem;
+        text-align: center;
+    }
+    .text-content {
+        max-width: 100%;
+    }
+    .box img {
+        width: 50%;
+    }
+    
+    
+}
+
+@media only screen and (min-width:480px) and (max-width: 768px) {
+    .box-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .box {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+    .text-content {
+        max-width: 100%;
+    }
+    .box img {
+        width: 50%;
+    }
+}
