@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soal Nomor 1</title>
+</head>
+<body>
+    <h1>Soal 1</h1>
+    <script> 
+        function countEvenNumbers(start, end) {
+            let count = 0;
+            let evenNumbers = [];
+
+            for (let i = start; i <= end; i++) {
+                if (i % 2 === 0) {
+                    count++;
+                    evenNumbers.push(i);
+                }
+            }
+
+            return { count, evenNumbers };
+        }
+
+        // Memeriksa apakah nilai yang diberikan adalah "Not-a-Number" (NaN)
+        function getInput(message) {
+            let input;
+            do {
+                input = parseInt(prompt(message));
+                if (isNaN(input)) {
+                    alert("Masukkan angka yang valid!");
+                }
+            } while (isNaN(input));
+            return input;
+        }
+
+        // Meminta user memasukkan inputan
+        let start = getInput("Masukkan angka awal:");
+        let end = getInput("Masukkan angka akhir:");
+
+        // Memeriksa apakah angka awal lebih besar dari angka akhir
+        if (start > end) {
+            alert("Angka awal tidak boleh lebih besar dari angka akhir.");
+        } else {
+            // Hitung jumlah angka genap
+            let result = countEvenNumbers(start, end);
+            alert(`Output: ${result.count} (${result.evenNumbers.join(', ')})`);
+        }
+    </script>
+</body>
+</html>
