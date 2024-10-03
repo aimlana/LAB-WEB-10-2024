@@ -1,0 +1,121 @@
+body {
+    overflow-x: hidden;
+    background-color: rgb(199, 255, 254);
+}
+.nav{
+    background-color: rgb(138, 241, 255);  
+    display: flex; 
+    justify-content: center;
+    position: fixed; 
+    top: 0; 
+    z-index: 1000; 
+    width: 100%
+}
+.nav-link:hover {
+    text-decoration: underline;
+}
+.nav a {
+    color: rgb(28, 28, 28);
+    font-size: 25px;
+    padding: 5%;
+    margin: 0px 20px; 
+    font-weight: bold;
+    text-decoration: none;
+}
+.carousel{
+    display: flex;
+    max-width: 80%; 
+    align-content: center;
+    margin: 80px auto;
+}
+.carousel img{
+    max-height: 500px; 
+    object-fit: cover;
+}
+#about2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 90px;
+}
+#about2 p{
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    max-width: 100%;
+    margin: 30px;
+    text-align: justify;
+    padding: 10px;
+}
+#about2 img {
+    margin-top: 10%;
+    width: 450px;
+    height: 350px;
+    justify-items: center;
+}
+#about h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
+    font-size: 2rem;
+    margin: 10px;
+}
+#about p{
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    max-width: 100%;
+    margin: 40px;
+    text-align: justify;
+}
+#about {
+    display: flex;
+    margin-bottom: 8;
+}
+#gallery {
+    margin: 0 auto; /* Memastikan container berada di tengah */
+    padding: 20px; /* Memberikan ruang di sekitar galeri */
+}
+#gallery .row {
+    justify-content: center; /* Untuk memastikan elemen berada di tengah jika tidak memenuhi baris */
+    gap: 20px; /* Memberikan jarak antar kolom */
+}
+
+#gallery h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
+    margin: 10px;
+    font-size: 2rem;
+    text-align: center;
+}
+#gallery img {
+    height: auto; /* Biarkan gambar mempertahankan rasio aslinya */
+    object-fit: cover; /* Agar gambar terlihat rapi */
+    transition: transform 0.5s; /* Memberikan efek transisi saat hover */
+}
+
+#gallery img:hover {
+    transform: scale(1.05); /* Membesarkan gambar sedikit saat dihover */
+}
+.form1 {
+    display: block; /* Optional: Ensures it's a block element */
+    margin: 10% auto 0 auto; /* Sets automatic left and right margins to center it */
+    max-width: 30%;
+    justify-items: center;
+}
+
+.form1 label {
+    color: rgb(0, 0, 0); /* Sets text color to black */
+}
+footer{
+    background-color: rgb(163, 225, 243);
+    height: 80px;
+    margin: 0;
+    padding: 0;
+
+}
+footer p{
+    color: rgb(255, 255, 255);
+}
+footer a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+footer a:hover{
+    text-decoration: underline;
+}
