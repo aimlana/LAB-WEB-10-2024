@@ -38,56 +38,56 @@ body {
 }
 
 
-/* Hero Section */
-#hero {
-    background: linear-gradient(160deg,var(--pr-color, #997D70));
-    height: 100vh;
-    width: 100%;
-    position: relative;
-}
+    /* Hero Section */
+    #hero {
+        background: linear-gradient(160deg,var(--pr-color, #997D70));
+        height: 100vh;
+        width: 100%;
+        position: relative;
+    }
 
-.butterfly_image{
-    position: absolute;
-    right: 150px;
-    top: 20px;
-    width: 100px;
-    height: auto;
-    z-index: 1;
-}
+    .butterfly_image{
+        position: absolute;
+        right: 150px;
+        top: 20px;
+        width: 100px;
+        height: auto;
+        z-index: 1;
+    }
 
-.hero-tagline {
-    padding-left: 50px;
-}
-.hero-tagline h1 {
-    color: #fff;
-    font-weight: 900;
-    font-size: 50px;
-    display: inline-block;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    width: auto;
-}
+    .hero-tagline {
+        padding-left: 50px;
+    }
+    .hero-tagline h1 {
+        color: #fff;
+        font-weight: 900;
+        font-size: 50px;
+        display: inline-block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: auto;
+    }
 
-.hero-tagline p {
-    color: #E67E22;
-    font-size: 30px;
-}
+    .hero-tagline p {
+        color: #E67E22;
+        font-size: 30px;
+    }
 
-.button-lg-primary{
-    width: 16rem;
-    height: 50px;
-    background-color: #2ECC71;
-    border: none;
-    color: white;
-    font-weight: 400;
-    font-size: 20px;
-}
+    .button-lg-primary{
+        width: 16rem;
+        height: 50px;
+        background-color: #2ECC71;
+        border: none;
+        color: white;
+        font-weight: 400;
+        font-size: 20px;
+    }
 
-.arrow_image {
-    height: 75px;
-    padding-left: 1rem;
-}
+    .arrow_image {
+        height: 75px;
+        padding-left: 1rem;
+    }
 @media screen and (max-width:480px) {
     .hero-tagline {
         padding-left: 0px;
@@ -138,7 +138,7 @@ body {
     align-items: center;
     justify-content: center;
     position: relative;
-    overflow: hidden; /* Menyembunyikan elemen yang melampaui batas */
+    overflow: hidden; 
 }
 
 .about-tagline h2 {
@@ -151,7 +151,6 @@ body {
     margin-top: 30px;
     margin-left: 120px;
     margin-right: 120px;
-    font-size: 30px;
     color: #333;
     font-weight: 300;
 }

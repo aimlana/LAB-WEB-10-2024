@@ -1,0 +1,121 @@
+/* Style.css */
+* {
+    color: white;
+    font-family: 'Poppins';
+    font-size: 500;
+}
+body {
+    background-image: url('Images/latar_belakang.png');
+    background-size: cover; /* Mengisi seluruh layar dengan gambar */
+    background-position: center; /* Memusatkan gambar */
+    background-repeat: no-repeat; /* Mencegah pengulangan gambar */
+    background-attachment: fixed; /* Membuat background tetap saat scroll */
+}
+
+.player-area {
+    margin-top: 240px;
+}
+
+.player-area p {
+    font-size: 20px;
+    font-family: "Metal", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.money-box {
+    border: 2px solid #017914; /* Warna border kuning */
+    border-radius: 5px; /* Sudut melengkung */
+    padding: 8px; /* Jarak antara teks dan border */
+    background-color: transparent; /* Warna latar belakang transparan */
+    margin: 0; /* Jarak atas dan bawah */
+}
+
+.container-bawah {
+    position: fixed; /* Menetapkan posisi tetap */
+    bottom: 0; /* Mengatur posisi di bagian bawah */
+    left: 0; /* Mengatur posisi di sebelah kiri */
+    right: 0; /* Mengatur posisi di sebelah kanan */
+    background-color: black; /* Warna latar belakang container-fluid */
+    padding: 9px 0; /* Padding di container-fluid */
+    text-align: center; /* Memusatkan teks */
+}
+
+.btn {
+    height: 39px;
+    width: 150px;
+    color: white;
+}
+
+.btn-primary {
+    background-color: #017914;
+}
+
+.right-container {
+    background-color: #017914;
+    position: absolute;
+    /*Mengaturposisielemenmenjadiabsolute*/top: 50%;
+    /*Menempatkanelemenpada50%daritinggiviewport*/right: 0;
+    /*Menempatkanelemendisisikanandariviewport*/transform: translateY(-50%);
+    padding: 5px;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+/* Mengatur kontainer card-group */
+/* .card-group {
+    margin: 1px;
+} */
+
+/* Mengatur tampilan kartu */
+.card {
+    justify-content: center;
+    gap: 15px;
+    background-color: transparent;
+    color: transparent;
+    margin: 0 0px;
+    transition: transform 0.2s;    /* Animasi saat hover */
+    border-radius: 0px;            /* Mengatur sudut kartu */
+    overflow: hidden;               /* Mencegah gambar keluar dari batas kartu */
+}
+
+/* Mengatur efek saat hover pada kartu */
+.card:hover {
+    transform: scale(1.05);         /* Membesarkan kartu sedikit saat di-hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0); /* Menambahkan bayangan */
+}
+
+/* Mengatur gambar di dalam kartu */
+.card-img {
+    width: 60px;
+    height: auto;
+}
+
+/* Mengatur lebar container untuk area Player dan Dealer */
+.player-area .card-group{
+
+    width: 60%; /* Mengatur lebar menjadi 50% dari layar */
+    max-width: auto; /* Mengatur lebar maksimal */
+    margin: 0 auto; /* Mengatur agar container berada di tengah */
+}
+
+/* Mengatur tampilan kartu dalam container */
+#dealer-hand, #player-hand {
+    display: flex;
+    justify-content: center; /* Mengatur jarak antar kartu */
+    gap: 10px; /* Menambahkan jarak antar kartu */
+}
+
+.card-group {
+    width: 100%; /* Membuat container kartu memenuhi lebar container */
+}
+
+/* Responsif untuk perangkat kecil */
+@media (max-width: 768px) {
+    .player-area .card-container {
+        width: 80%; /* Lebar lebih besar pada perangkat kecil */
+    }
+}
+
