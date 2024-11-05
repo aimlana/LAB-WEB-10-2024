@@ -1,0 +1,1 @@
+<a href="{{ $url }}" class="btn btn-outline-primary m-1">{{ $title }}</a>
