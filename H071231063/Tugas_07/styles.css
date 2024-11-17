@@ -1,0 +1,93 @@
+body { 
+    background: linear-gradient(to bottom, #a2c9ff, #fbb9fa); /* Warna latar belakang dengan gradien */
+    font-family: sans-serif; /* Font default */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.form-container {
+    padding: 30px; /* Kurangi padding form */
+    max-width: 600px; /* Lebar maksimum form yang lebih kecil */
+    margin: auto; /* Memastikan form berada di tengah halaman */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+h2 {
+    color: #595959; /* Warna judul */
+    margin-bottom: 20px;
+}
+
+.error {
+    color: red;
+    margin-bottom: 10px;
+}
+
+.success {
+    color: green;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color:  #595959;
+}
+
+input[type="text"],
+input[type="password"],
+select {
+    width: 250px;
+    padding: 7px; /* Padding yang cukup pada input */
+    margin-bottom: 15px;
+    border: 3px solid #959595;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.button {
+    background-color: #50bff7; /* Warna tombol */
+    color: #fff;
+    padding: 12px 20px; /* Padding tombol */
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.button:hover {
+    background-color: #2f97f9; /* Warna tombol saat hover */
+}
+
+p {
+    margin-top: 10px;
+}
+
+a {
+    color: #7eb2ff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+table {
+    width: 100%; /* Tabel akan mengambil seluruh lebar */
+    border-collapse: collapse; /* Menggabungkan border */
+    margin-top: 10px; /* Tambahkan margin atas untuk jarak dari elemen lainnya */
+}
+
+table, th, td {
+    border: 1px solid #555454; /* Warna dan jenis border */
+}
+
+th, td {
+    padding: 10px; /* Tambahkan padding yang lebih besar untuk sel tabel */
+    text-align: left;
+}
