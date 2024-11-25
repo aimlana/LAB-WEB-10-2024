@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .h1{
+            justify-content : center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Soal 3</h1>
+    <script>
+
+        const daysOfWeek = ["minggu", "senin", "selasa", "rabu", "kamis", "jumat", "sabtu"];
+
+        function findFutureDay(currentDay, daysToAdd) {
+        //indexof mencari indeks dari currentday di array daysofweek
+        const currentIndex = daysOfWeek.indexOf(currentDay);
+
+        //=== membandingkan nilai dan tipe data secara ketat tanpa melakukan konversi tipe data.
+        //Dalam kasus ini, kita ingin memastikan bahwa currentIndex adalah tipe number dan nilainya adalah -1.
+        if (currentIndex === -1) {
+            return "Hari tidak valid!";
+        }
+
+        //Menambahkan jumlah hari yang akan datang (daysToAdd) ke indeks hari sekarang.
+        const futureIndex = (currentIndex + daysToAdd) % 7;
+
+        // Kembalikan nama hari di indeks baru
+        return daysOfWeek[futureIndex];
+        }
+
+        // const currentDay = "Jumat";
+        // const daysToAdd = 1000;
+
+         // Meminta input dari pengguna
+        let currentDay = prompt("Masukkan hari sekarang (Minggu, Senin, Selasa, Rabu, Kamis, Jumat, Sabtu):");
+        currentDay = currentDay.toLowerCase();
+        const daysToAdd = parseInt(prompt("Masukkan jumlah hari yang ingin ditambahkan:"));
+        
+        let futureDay = findFutureDay(currentDay, daysToAdd);
+
+        alert(`${daysToAdd} hari setelah ${currentDay} adalah ${futureDay}`);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program Diskon Barang</title>
+</head>
+<body>
+    <h1>Program Diskon Barang</h1>
+
+    <script>
+        function hitungDiskon(harga, jenisBarang) {
+            let diskon = 0;
+
+            if (jenisBarang.toLowerCase() === 'elektronik') {
+                diskon = 10;
+            } else if (jenisBarang.toLowerCase() === 'pakaian') {
+                diskon = 20;
+            } else if (jenisBarang.toLowerCase() === 'makanan') {
+                diskon = 5;
+            } 
+
+            // Hitung harga setelah diskon
+            let jumlahDiskon = (diskon / 100) * harga;
+            let hargaAkhir = harga - jumlahDiskon;
+
+            return { hargaAkhir, diskon };
+        }
+
+        
+        let harga = parseFloat(prompt("Masukkan harga barang:"));
+        let jenisBarang = prompt("Masukkan jenis barang (Elektronik, Pakaian, Makanan, Lainnya):");
+
+        /*Jika ditetapkan
+        let harga = 10000;
+        let jenisBarang = makanan;
+        */
+
+        if (isNaN(harga) || harga <= 0) {
+            alert("Masukkan harga yang valid!");
+        } else {
+            let hasil = hitungDiskon(harga, jenisBarang);
+            alert(`Harga awal: Rp${harga}\nDiskon: ${hasil.diskon}%\nHarga setelah diskon: Rp${hasil.hargaAkhir}`);
+        }
+    </script>
+</body>
+</html>

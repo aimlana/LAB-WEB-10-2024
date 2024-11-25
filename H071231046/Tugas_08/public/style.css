@@ -1,0 +1,52 @@
+body {
+    font-family: 'Poppins';
+    text-align: center;
+}
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: blue;
+}
+.btn {
+    padding: 10px 20px;
+    background-color: lightblue;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+.navbar .nav-link {
+    color:gray !important;
+    font-weight: 300;
+}
+
+.navbar .nav-link.active {
+    color: white !important;
+    font-weight: 300;
+}
+
+.navbar .btn-outline-success {
+    color: white;
+    border-color: white;
+}
+
+.navbar .btn-outline-success:hover {
+    color: #28a745;
+    background-color: white;
+}
+
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+.counter {
+    opacity: 0;
+    transform: translateY(20px); /* Memulai sedikit lebih rendah */
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+}
+
+.counter.visible {
+    opacity: 1;
+    transform: translateY(0); /* Naik ke posisi aslinya */
+}
