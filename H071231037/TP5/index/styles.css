@@ -1,0 +1,127 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body{
+    background-image: url('/images/istockphoto-1299608766-612x612.jpg');
+    
+}
+
+.game-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.cards-container{
+   display: flex;
+   gap: 50px;
+   flex-direction: column;
+}
+
+.navbar{
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 40px;
+    height: 80px;
+    background-color: rgb(17, 139, 17);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar h1{
+    color: white;
+}
+
+.controls{
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+#kalah{
+    display: none;
+    color: red;
+    font-size: 2.5rem;
+}
+
+#menang{
+    display: none;
+    color: white;
+    font-size: 2.5rem;
+}
+
+
+#stay{
+    color: white;
+    width: 120px;
+    height: 60px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: 2px solid black;
+    border-radius: 12px;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
+#restart{
+    color: white;
+    width: 120px;
+    height: 60px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: 2px solid black;
+    border-radius: 12px;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
+#hit{
+    color: white;
+    width: 120px;
+    height: 60px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: 2px solid black;
+    border-radius: 12px;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
+
+.image-container{
+    margin-bottom: 100px;
+}
+
+.image-container img{
+    margin-left: 80px;
+    max-width: 20%;
+  
+    
+}
+
+footer{
+    margin: 0px;
+    padding: 0px;
+    height: 80px;
+    background-color: rgb(17, 139, 17);
+}
+
+
+
+
+footer p{
+    color: white;
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 10px;
+}
+

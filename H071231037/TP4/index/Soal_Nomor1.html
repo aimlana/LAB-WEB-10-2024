@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soal Nomor 1 </title>
+    
+</head>
+<body>
+    <script>
+        function countEvenNumbers(x,y){
+            let jumlahBilanganBulat = 0;
+            let bilanganBulat = [];
+            
+            for(let i = x; i <= y;i++){
+                if(i % 2 == 0 ){
+                    jumlahBilanganBulat ++;
+                    bilanganBulat.push(i);
+                }
+            }
+            console.log("Output: " + jumlahBilanganBulat + " (" + bilanganBulat + " )")
+            return jumlahBilanganBulat;
+        };
+        
+        countEvenNumbers(1,10);
+    </script>
+</body>
+</html>

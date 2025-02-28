@@ -1,0 +1,18 @@
+.links{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 160px;
+}
+
+.links img{
+    max-width: 70%;
+    max-height: 70%;
+}
+
+.links img:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
